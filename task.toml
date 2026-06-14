@@ -1,0 +1,40 @@
+[task]
+name = "snorkel/sequoia_tbench_task"
+
+[metadata]
+domain = "Engineering"
+subdomain = "Materials Science"
+outcome_type = "deterministic"
+workflow = "Data science / machine learning"
+num_of_steps = 45
+difficulty = "advancedplus"
+authors = ["OpenAI"]
+task_types = ["Instrument calibration", "Validation assessment", "Anomaly detection", "Laboratory triage"]
+skills = ["materials characterization", "instrument calibration", "time-series quality control", "robust statistics", "calibration validation", "scientific reporting"]
+tool_types = ["Scientific Computing Tools", "Research Communication Tools"]
+
+[task.details]
+title = "Sequoia Materials Exposure Sensor Calibration Task"
+short_description = "Calibrate and validate sensors in materials exposure chambers using reference instrument visits."
+
+[verifier]
+timeout_sec = 900
+
+[agent]
+timeout_sec = 900
+
+[environment]
+build_timeout_sec = 900
+cpus = 2
+memory_mb = 8192
+storage_mb = 10240
+allow_internet = true
+
+[resources]
+references = [
+  "ASTM International. (2020). ASTM G151: Standard practice for exposing nonmetallic materials in accelerated test devices that use laboratory light sources.",
+  "International Organization for Standardization. (2019). ISO 4892-1: Plastics — Methods of exposure to laboratory light sources — Part 1: General guidance."
+]
+
+[settings]
+expected_expert_time = "180-240 minutes"

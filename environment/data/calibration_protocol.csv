@@ -1,0 +1,4 @@
+measurement_type,valid_min,valid_max,drift_threshold,min_calibration_matches
+temperature_c,-50,60,1.5,4
+humidity_percent,0,100,5.0,4
+pm25_ug_m3,0,1000,7.0,4
