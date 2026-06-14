@@ -392,14 +392,14 @@ def compute_operational_triage(
             score += 1
 
         if score >= 6:
-    priority_class = "high"
-    action = "urgent_field_visit"
-elif score >= 3:
-    priority_class = "medium"
-    action = "schedule_recalibration"
-else:
-    priority_class = "low"
-    action = "routine_monitoring"
+            priority_class = "high"
+            action = "urgent_field_visit"
+        elif score >= 3:
+            priority_class = "medium"
+            action = "schedule_recalibration"
+        else:
+            priority_class = "low"
+            action = "routine_monitoring"
 
         meta = meta_by_station[station_id]
         rows.append({
